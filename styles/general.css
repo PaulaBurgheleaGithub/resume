@@ -1,0 +1,152 @@
+/* font and color properties */
+:root {
+  --header1: #c34b00;
+  --header2: #246726;
+  --text1: #f4f1ed;
+  --hover: #eef48d;
+}
+@font-face {
+  font-family: "prata";
+  font-family: "inconsolata";
+  src: url(assets/Prata/Prata-Regular.ttf) format("truetype");
+  src: url(assets/Inconsolata/Inconsolata-VariableFont_wdth\wght.ttf)
+    format("truetype");
+  font-weight: 100 400;
+}
+body {
+  font-family: "inconsolata", Ubuntu, sans-serif;
+  font-size: 2em;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "prata", serif;
+}
+.menu > nav > a {
+  font-size: 2.2rem;
+}
+.text-header h1 {
+  font-size: 150px;
+  font-family: "prata", Ubuntu, serif;
+  /* padding-top: 65px; */
+  color: var(--text1);
+  font-weight: 100;
+}
+.company-name > h4 {
+  color: var(--text1);
+}
+
+/* general layout */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  padding: 3%;
+  display: flex;
+  align-items: center;
+}
+.header-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.work-experience {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+.work-intro {
+  margin: 10px 100px 10px 0px;
+}
+.twilio,
+.sendgrid-uk,
+.sendgrid-ro {
+  display: flex;
+  width: 100%;
+}
+
+.twilio > h4,
+.sendgrid-uk > h4,
+.sendgrid-ro > h4 {
+  width: 350px;
+  height: 40px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: inherit;
+  width: 50%;
+  padding: 5px;
+  margin: 5px;
+  background-color: #eef48d;
+}
+
+.company-name {
+  display: block;
+  padding: 3px 5px 0px 5px;
+  width: fit-content;
+  height: 3rem;
+  background-color: var(--header2);
+}
+aside {
+  display: flex;
+}
+footer {
+  height: 20rem;
+  background-color: #0073ae;
+  opacity: 65%;
+}
+/* header layout */
+header {
+  background: linear-gradient(
+    to right,
+    var(--header1) 50%,
+    var(--header2) 50% 100%
+  );
+}
+
+/* images/pictures */
+aside > picture > img {
+  padding: 10px;
+  background-color: #cd3900;
+}
+
+/* nav */
+nav a:hover {
+  color: var(--hover);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text1);
+  font-size: 25px;
+  padding: 20px 25px 30px 38px;
+  font-family: "prata", Ubuntu, serif;
+}
+header picture img {
+  padding: 10px;
+  margin: 5px 20px 5px 10px;
+}
+
+header div p {
+  color: var(--text1);
+  font-family: "prata", Ubuntu, sans-serif;
+}
+/* lists */
+section > ul > li {
+  text-decoration: none;
+  text-align: left;
+}
